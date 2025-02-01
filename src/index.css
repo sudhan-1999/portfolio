@@ -1,43 +1,220 @@
-/*html{
-
-}*/
-nav{
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
   position: sticky;
   border-radius: 5px;
 }
-.container-container{
+.container-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
-a{
+a {
   text-decoration: none;
   padding: 5px;
 }
-.mobile-menu-button{
+.mobile-menu-button {
   display: none;
-  
 }
-.mobile-menu{
+.mobile-menu {
   display: flex;
   flex-direction: row;
-  
 }
 .mobile-menu-link {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: black;
   align-items: center;
 }
-
-@media (max-width: 768px) {
-  .desktop-menu{
-    display: none;
-  }
-  .mobile-menu-button{
-    display:block;
-  }
+.homediv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
 }
 
+.aboutcomp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translatex(-100px);
+  visibility: hidde;
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-in;
+}
+.aboutcomp.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translatex(0);
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu-button {
+    display: block;
+  }
+  .about {
+    height: 300px;
+  }
+  .aboutcomp.visible {
+    height: 250px;
+  }
+  .card-img-top {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
+.abovecard {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.aboutmetitle {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: larger;
+}
+.text {
+  font-size: medium;
+  font-weight: 700;
+  font-style: oblique;
+  height: auto;
+}
+#certificate:hover {
+  box-shadow: 0 0 10px #e4e7e5, 0 0 20px #9cedc4, 0 0 30px #06c92d;
+}
+.forcertificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-top {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  padding: 5px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#col {
+  width: 150px;
+  height: 150px;
+  border-color: #e4e7e5;
+
+}
+
+.skills {
+  text-align: center;
+}
+
+.certificates {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#certificate {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%; 
+  height: 100%; 
+  max-width: 350px;  /* Adjust card size if needed */
+  margin: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the entire space */
+  border-radius: 8px;
+}
+
+.skills-container {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.skill-item {
+  transform: translateX(100px); 
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.skill-item.visible {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+.certificate-container {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.certificate-item {
+  transform: translateY(100px); 
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.certificate-item.visible {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+
+
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: #cac2c2; 
+}
+
+body {
+  padding-top: 60px; 
+}
+
+.navbar .navbar-nav .nav-link {
+  color: black;
+  padding: 10px 15px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: black;
+}
 

@@ -22,7 +22,7 @@ function Certificate() {
     const certificates = [Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1]; // Array of 9 certificates
     
   return (
-    <div className="skills certificate-container">
+    <div className="skills certificate-container" id="mycertificate">
       <div className="forcertificate">
         <p className="certificates">Certificates</p>
       </div>

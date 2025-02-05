@@ -40,8 +40,12 @@ useEffect(() => {
   ];
   
   return (
-    <div className="container skills-container">
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+    <div id="skills">
+    <div className="container skills-container" >
+      <div className="forskills" >
+      <p className="skills">Skills</p>
+      </div>
+      <div className="row row-cols-1 row-cols-md-3 g-4" >
         {icons.map((icon) => (
           <div className="col skill-item" id="col" key={icon.id}>
             <div>
@@ -53,6 +57,7 @@ useEffect(() => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

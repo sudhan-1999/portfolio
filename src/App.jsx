@@ -1,8 +1,11 @@
 import About from "./About";
 import "./App.css";
 import Certificate from "./Certificate";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import Home from "./Home";
 import Content from "./Nav";
+import Service from "./Service";
 import Skills from "./Skills";
 
 function App() {
@@ -13,7 +16,10 @@ function App() {
         <Home/>
         <About/>
         <Skills/>
+        <Service/>
         <Certificate/>
+        <Contact/>
+        <Footer/>
       </div>
     </>
   );

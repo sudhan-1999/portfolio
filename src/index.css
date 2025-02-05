@@ -192,6 +192,22 @@ a {
   transform: translateY(0); 
   opacity: 1;
 }
+.service-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

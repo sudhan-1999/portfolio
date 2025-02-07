@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/jayasudhan-a-9593b4217/" className="text-white mx-2">
-            LinkedIn
+            Linkedin
           </a>
           <a href="https://github.com/" target="_blank" className="text-white mx-2">
             GitHub

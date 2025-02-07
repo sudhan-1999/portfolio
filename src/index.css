@@ -208,6 +208,89 @@ h5{
   justify-content: center;
   align-items: center;
 }
+.forform{
+  padding: 15px;
+}
+.servicesec {
+  opacity: 0;
+  transform: translatex(-100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.servicesec.visible {
+  opacity: 1;
+  transform: translatex(0);
+}
+
+.forform{
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.forform.visible{
+  opacity: 1;
+  transform: translateX(0);
+}
+.fixed-textarea {
+  height: 150px; 
+  resize: none;  
+}
+
+
+.forform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-box {
+  background-color: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.input-box::placeholder,
+.textarea-box::placeholder {
+  color: #8b949e;
+}
+
+.textarea-box {
+  background-color: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #1f6feb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(31, 111, 235, 0.5);
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #3b82f6;
+  box-shadow: 0px 6px 15px rgba(31, 111, 235, 0.7);
+}
 
 
 
@@ -218,7 +301,7 @@ h5{
   left: 0;
   right: 0;
   z-index: 1000; 
-  background-color: #cac2c2; 
+  background-color: #f2e4d4; 
 }
 
 body {

@@ -1,5 +1,7 @@
 import About from "./About";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Certificate from "./Certificate";
 import Contact from "./Contact";
 import Footer from "./Footer";

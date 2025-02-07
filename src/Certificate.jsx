@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
-import Certificate1 from "./image/GuviCertification_0m6a2817c221V2qzo8_5.png";
-import Certificate2 from "./image/GuviCertification_0m6a2817c221V2qzo8_5.png";
+import Certificate2 from "./image/GuviCertification_891d727624iv1w820o_4.png";
+import Certificate3 from "./image/GuviCertification_0m6a2817c221V2qzo8_5.png";
+import Certificate4 from "./image/GuviCertification_0P267Cl8Q221o6n818_5.png";
+import Certificate5 from "./image/GuviCertification_22rHJy08KB2141a876_4.png";
+import Certificate6 from "./image/GuviCertification_818tTJVn21u6072M25_4.png";
+import Certificate7 from "./image/GuviCertification_a0V6W7828IC2TA211l_4.png";
+import Certificate1 from "./image/GuviCertification_H28709w1L1868F26V2_5.png";
+import Certificate8 from "./image/GuviCertification_o18g81R2726BTLz0c2_4.png";
+import Certificate9 from "./image/GuviCertification_l801SF26hb2E812z71_5.png";
 
 function Certificate() {
   useEffect(() => {
@@ -19,7 +26,7 @@ function Certificate() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-    const certificates = [Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1, Certificate1]; // Array of 9 certificates
+    const certificates = [Certificate1, Certificate2, Certificate3, Certificate4, Certificate5, Certificate6, Certificate7, Certificate8, Certificate9]; 
     
   return (
     <div className="skills certificate-container" id="mycertificate">

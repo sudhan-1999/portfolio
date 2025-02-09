@@ -34,9 +34,9 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar  fixed-top">
+    <nav className="navbar bg-dark navbar-expand-lg navbar  fixed-top">
       <div className="container">
-        <a className="navbar-brand nav-link" href="#homediv">My Portfolio</a>
+        <a className="navbar-brand nav-link" id="portfolio" href="#homediv">My Portfolio</a>
         <button 
           className="navbar-toggler" 
           type="button" 

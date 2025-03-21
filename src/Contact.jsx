@@ -7,7 +7,7 @@ function Contact() {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({}); // Store validation errors
+  const [errors, setErrors] = useState({}); 
 
   const formData = { name, email, phone, subject, message };
 
@@ -56,7 +56,7 @@ function Contact() {
     if (!validateForm()) return; // Stop submission if errors exist
 
     try {
-      const response = await axios.post("http://localhost:3000/", formData);
+      const response = await axios.post("https://jayasudhanportfolio.onrender.com/contact", formData);
       console.log("Response:", response.data);
 
       // Clear form after successful submission
@@ -73,6 +73,9 @@ function Contact() {
 
   return (
     <div className="forform container" id="forform">
+      <div className="forcontact">
+      <p className="contact">Contact</p>
+      </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-md-6">
@@ -80,6 +83,7 @@ function Contact() {
               type="text"
               className="form-control input-box"
               placeholder="Enter Your Name"
+              style={{ color: "black" }}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -90,6 +94,7 @@ function Contact() {
               type="email"
               className="form-control input-box"
               placeholder="Enter Your Mail Id"
+              style={{ color: "black" }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -103,6 +108,7 @@ function Contact() {
               type="text"
               className="form-control input-box"
               placeholder="Enter Your Mobile Number"
+              style={{ color: "black" }}
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -113,6 +119,7 @@ function Contact() {
               type="text"
               className="form-control input-box"
               placeholder="Enter Subject Of The Mail"
+              style={{ color: "black" }}
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             />
@@ -125,6 +132,7 @@ function Contact() {
             <textarea
               className="form-control textarea-box"
               placeholder="Enter Your Message Here..."
+              style={{ color: "black" }}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>

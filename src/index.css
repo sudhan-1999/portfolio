@@ -3,7 +3,19 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding-top: 60px; 
+  background-color: #1E1E1E  ;
 }
+p{
+  color:#F5F5F5 ;
+}
+.card-title{
+  color:#F5F5F5 ;
+}
+  .card-text{
+  color:black;
+}
+
+
 
 /* ================== Navbar ================== */
 .navbar.fixed-top {
@@ -12,17 +24,21 @@ body {
   left: 0;
   right: 0;
   z-index: 1000; 
+  background-color: #1E1E1E;
 }
 #portfolio{
-  color: rgb(220, 210, 210);
+  color: whitesmoke;
+}
+#portfolio:hover{
+  color: #ff9800;
 }
 .navbar .navbar-nav .nav-link {
-  color: rgb(220, 210, 210);
+  color: whitesmoke;
   padding: 10px 15px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: rgb(220, 210, 210);
+  color: #ff9800;
 }
 
 nav {
@@ -57,6 +73,9 @@ a {
   text-decoration: none;
   align-items: center;
 }
+p:hover{
+  color: #ff9800;
+}
 
 /* ================== Home Section ================== */
 .homediv {
@@ -66,9 +85,16 @@ a {
   align-items: center;
 }
 
+
 .icons {
   display: flex;
   gap: 10px;
+}
+.myname,.typer{
+  font-size: 30px;
+}
+.icons>a:hover{
+  box-shadow:0px 6px 15px rgb(226, 181, 115); 
 }
 
 /* ================== About Section ================== */
@@ -81,11 +107,14 @@ a {
 }
 
 .aboutmetitle {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 15px;
   font-size: larger;
+  font-size: 30px;
+  color:whitesmoke ;
 }
-
+.aboutmetitle:hover{
+  color: #ff9800;
+}
 .aboutcomp {
   display: flex;
   flex-direction: column;
@@ -117,11 +146,14 @@ a {
   font-weight: 700;
   font-style: oblique;
   height: auto;
+  text-align: center;
 }
 
 /* ================== Skills Section ================== */
 .skills {
   text-align: center;
+  font-size: 30px;
+  padding: 15px;
 }
 
 .skills-container {
@@ -139,6 +171,13 @@ a {
   transform: translateX(0);
   opacity: 1;
 }
+ .skill-item{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ================== Certificate Section ================== */
 .certificates {
@@ -155,10 +194,11 @@ a {
 #certificate {
   display: flex;
   justify-content: center;
+  width: 18rem;
 }
 
 #certificate:hover {
-  box-shadow: 0 0 10px #e4e7e5, 0 0 20px #9cedc4, 0 0 30px #06c92d;
+  box-shadow: 0 0 10px #e4e7e5, 0 0 20px #9cedc4, 0 0 30px #00ADB5  ;
 }
 
 .certificate-item {
@@ -178,33 +218,19 @@ a {
   align-items: center;
 }
 
-/* ================== Services Section ================== */
-.service-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.servicesec {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.servicesec.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 /* ================== Form Section ================== */
 .forform {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 30px;
   opacity: 0;
   transform: translateX(-100px);
+  text-align: center;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -218,10 +244,13 @@ a {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
+  background: #fff; /* Optional: If you want a background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .input-box,
 .textarea-box {
+  width: 100%; /* Ensures input fields take full width */
   color: white;
   border: 1px solid #30363d;
   padding: 12px;
@@ -234,9 +263,9 @@ a {
   color: #090a0b;
 }
 
-.fixed-textarea {
-  height: 150px;
-  resize: none;
+.textarea-box {
+  height: 150px; 
+  resize: none;  
 }
 
 .submit-btn {
@@ -254,11 +283,10 @@ a {
   background-color: #3b82f6;
   box-shadow: 0px 6px 15px rgba(31, 111, 235, 0.7);
 }
-.textarea-box {
-  height: 150px; /* Set fixed height */
-  resize: none;  /* Disable manual resizing */
+.contact{
+  font-size: 30px;
+  padding: 15px;
 }
-
 
 /* ================== Cards ================== */
 .card {
@@ -309,7 +337,7 @@ h5 {
     display: none;
   }
 .navbar-toggler{
-  background-color: white;
+  background-color: #00ADB5   ;
 
 }
   .mobile-menu-button {
@@ -317,10 +345,13 @@ h5 {
   }
 
   .about {
-    height: 300px;
+    height: 350px;
   }
 
   .aboutcomp.visible {
+    height: 250px;
+  }
+  .abovecard{
     height: 250px;
   }
 
@@ -329,10 +360,118 @@ h5 {
     height: 80px;
     object-fit: contain;
     padding: 5px;
-  }
+  } 
+}
 
-  .card {
-    width: 150px;
-    height: 150px;
-  }
+/* ================== Projects Section ================== */
+.projects-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1E1E1E;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #F5F5F5;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-image: linear-gradient(135deg, #00ADB5, #3b82f6) 1;
+  box-shadow: 0px 6px 15px rgba(31, 111, 235, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: #F5F5F5;
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  color: #B3B3B3;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.tech {
+  background: rgba(0, 173, 181, 0.2);
+  color: #00ADB5;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 5px 4px;
+  font-weight: 600;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00ADB5, #3b82f6);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.github-btn {
+  background: linear-gradient(135deg, #24292e, #3b3b3b);
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+.project-links>a{
+  margin: 10px;
+}
+.section-title{
+  font-size: 30px;
+  padding: 15px;
+}
+.section-title:hover{
+  color: #ff9800;
 }

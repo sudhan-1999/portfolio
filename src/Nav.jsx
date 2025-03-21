@@ -34,7 +34,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar bg-dark navbar-expand-lg navbar  fixed-top">
+    <nav className="navbar  navbar-expand-lg navbar  fixed-top">
       <div className="container">
         <a className="navbar-brand nav-link" id="portfolio" href="#homediv">My Portfolio</a>
         <button 
@@ -60,7 +60,7 @@ function Navbar() {
               <a className="nav-link" href="#skills">Skills</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#myservice">My Service</a>
+              <a className="nav-link" href="#projects">Projects</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#mycertificate">Certificate</a>

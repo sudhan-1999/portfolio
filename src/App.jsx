@@ -9,6 +9,7 @@ import Home from "./Home";
 import Content from "./Nav";
 import Service from "./Service";
 import Skills from "./Skills";
+import Projects from "./Project";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Home/>
         <About/>
         <Skills/>
-        <Service/>
+        <Projects/>
         <Certificate/>
         <Contact/>
         <Footer/>

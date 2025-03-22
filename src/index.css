@@ -475,3 +475,15 @@ h5 {
 .section-title:hover{
   color: #ff9800;
 }
+
+/*footer*/
+.mail {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+
+.mail:hover {
+  color: #ff9800;
+  cursor:pointer;
+}

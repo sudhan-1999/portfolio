@@ -34,7 +34,7 @@ function Home() {
         {" "}
         <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} size='2x'/>
       </a>
-      <a href="mailto:jayasudhanwebdev@gmail.com" target="_blank" mailto>
+      <a href="mailto:jayasudhanwebdev@gmail.com" target="_blank" >
         {" "}
         <FontAwesomeIcon icon={faEnvelope} style={{ color: "#D44638" }} size='2x'/>
       </a>

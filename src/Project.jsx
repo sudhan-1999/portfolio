@@ -21,7 +21,7 @@ function Projects() {
       }
     };
 
-    fetchProjects();
+    fetchProjects()
   }, []);
 
  

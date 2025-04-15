@@ -412,6 +412,19 @@ h5 {
 .project-card:hover .project-image {
   transform: scale(1.05);
 }
+/* Base state before animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* Triggered animation */
+.animate-on-scroll.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .project-card h3 {
   color: #F5F5F5;

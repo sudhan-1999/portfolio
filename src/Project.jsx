@@ -43,6 +43,16 @@ function Projects() {
       tech: ["React", "Node.js", "MongoDB", "Express"],
       liveLink: "https://hotl-booking.netlify.app/",
     },
+    {
+  title: "Military Asset Management System",
+  description: [
+    "A role-based full-stack web application designed to efficiently manage military assets across different bases.",
+    "Supports functionalities like user authentication, role-based access control (RBAC), asset assignment, transfer, and expenditure tracking.",
+    "Built with the MERN stack, it ensures secure operations, real-time data updates, and a responsive user interface for different roles like admin, commander, and logistic staff."
+  ],
+  tech: ["React", "Node.js", "MongoDB", "Express"],
+  liveLink: "https://profound-tartufo-c66400.netlify.app/"
+}
   ];
 
   return (
